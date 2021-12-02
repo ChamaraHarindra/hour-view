@@ -1,0 +1,144 @@
+{% set title = 'Home Page' %}
+{% set homePage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as imageCurve %}
+{% import "macro/tabs.njk" as tabs %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-flat">
+                    <!-- 				Days tabs.  -->
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist" id="days">
+                            <li role="presentation" class="active">
+                                <a href="#sun" aria-controls="sun" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        SUN <span>31 Oct</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#mon" aria-controls="mon" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        MON <span>01 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tue" aria-controls="tue" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        TUE <span>02 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#wed" aria-controls="wed" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        WED <span>02 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#thu" aria-controls="thu" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        THU <span>03 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#fri" aria-controls="fri" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        FRI <span>04 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sat" aria-controls="sa" role="tab" data-toggle="tab">
+                                    <div class="date-heading">
+                                        SAT <span>05 Nov</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="sun">
+                                <div class="emp-hours">
+                                    <section class="emp-hours__left">
+                                        <div class="h-row">
+                                            <div class="h-th">Employee Name</div>
+                                        </div>
+                                        {% for item in employee %}
+                                            <div class="h-row">
+                                                <div class="h-th">
+                                                    <div class="emp-name">{{ item.name }}
+                                                        <span>{{ item.time }}</span></div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </section>
+                                    <section class="emp-hours__right">
+                                        <div class="h-row">
+                                            <div class="h-th">08 am</div>
+                                            <div class="h-th">09 am</div>
+                                            <div class="h-th">10 am</div>
+                                            <div class="h-th">11 am</div>
+                                            <div class="h-th">12 pm</div>
+                                            <div class="h-th">01 am</div>
+                                            <div class="h-th">02 pm</div>
+                                            <div class="h-th">03 pm</div>
+                                            <div class="h-th">04 pm</div>
+                                            <div class="h-th">05 pm</div>
+                                            <div class="h-th">06 pm</div>
+                                            <div class="h-th">07 pm</div>
+                                            <div class="h-th">08 pm</div>
+                                            <div class="h-th">09 pm</div>
+                                            <div class="h-th">10 pm</div>
+                                            <div class="h-th">11 pm</div>
+                                            <div class="h-th">12 am</div>
+                                            <div class="h-th">01 am</div>
+                                            <div class="h-th">02 am</div>
+                                            <div class="h-th">03 am</div>
+                                            <div class="h-th">04 am</div>
+                                            <div class="h-th">05 am</div>
+                                            <div class="h-th">06 am</div>
+                                            <div class="h-th">07 am</div>
+                                        </div>
+                                        {% for emps in employee %}
+
+                                            <div class="h-row">
+                                                {# {% for i in range(8, 52) %} #}
+                                                {% for emp in emps.hours %}
+                                                    <div class="h-td">
+                                                        <div class="emp-shift {{emp.shift}}"></div>
+                                                    </div>
+                                                {% endfor %}
+                                                {# {% endfor %} #}
+                                            </div>
+
+                                        {% endfor %}
+
+                                    </section>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="mon">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="tue">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="wed">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="thu">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="fri">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="sat">...</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

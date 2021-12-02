@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include 'partials/head.njk' %}
+    </head>
+    <body>
+
+        {# Start Header Here #}
+        {# {% include 'partials/header.njk' %} #}
+        {# End Header #}
+
+        {# Start Main Content Here #}
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        {# End Main Content #}
+
+        {# Start Footer Here #}
+        {# {% include 'partials/footer.njk' %} #}
+        {# End Footer #}
+
+        <script src="https://wpcore.workportal.co/theme/admin/js/core/libraries/jquery.min.js"></script>
+        <script src="https://wpcore.workportal.co/theme/admin/js/core/libraries/bootstrap.min.js"></script>
+        <script src="{{ paths.root + paths.scripts }}/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+{% macro curveImg(class, curveImg) %}
+    <div class="{{ class }}"><img src="./static/media/{{ curveImg }}" alt=""></div>
+{% endmacro %}
+
+{% macro subTitle(title) %}
+    <div class="overlay"></div>
+    <div class="container top-z">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro service(title, img, order ='order-0', text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem") %}
+    <div class="row no-gutters align-items-center">
+        <div class="col-md-6 {{ order }} service-img">
+            <img src="./static/media/{{ img }}" alt="">
+        </div>
+        <div class="col-md-6 ">
+            <div class="p-4">
+                <h2 class="text-left">{{ title }}</h2>
+                <p>{{ text }}</p>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

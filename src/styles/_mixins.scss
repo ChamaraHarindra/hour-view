@@ -1,0 +1,42 @@
+@mixin button-color($bg, $color) {
+  background: $bg;
+  color: $color;
+
+  &:before {
+    background: $bg;
+    z-index: -1;
+  }
+  &:hover {
+    transition: all 0.3s ease;
+    color: $color;
+    text-decoration: none;
+    z-index: 1;
+
+    &:before {
+      background: darken($bg, 15%);
+    }
+  }
+  &:active {
+    color: $color;
+
+    &:before {
+      background: darken($bg, 15%);
+    }
+  }
+}
+
+//fancy link
+
+@mixin link-color($color, $hoverColor) {
+  color: $color;
+
+  &:after {
+    background: $hoverColor;
+  }
+
+  &:hover,
+  &:active {
+    color: $hoverColor;
+    text-decoration: none;
+  }
+}

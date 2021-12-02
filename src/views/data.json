@@ -1,0 +1,449 @@
+{
+  "site": {
+    "title": "(site title)",
+    "description": "(site meta description)",
+    "baseUrl": "./"
+  },
+  "pages": {
+    "index": {
+      "title": "",
+      "description": "",
+      "stylesheets": ["main"],
+      "scripts": ["main"]
+    },
+    "about-index": {
+      "title": "(about title)",
+      "description": "(about meta description)",
+      "stylesheets": ["main", "about"],
+      "scripts": ["main", "about"]
+    }
+  },
+  "menus": {
+    "primary": [
+      {
+        "id": "index",
+        "path": "/",
+        "children": "Home"
+      },
+      {
+        "id": "about-index",
+        "path": "/about",
+        "children": "<i>About</i>"
+      }
+    ]
+  },
+  "employee": [
+    {
+      "id": 1,
+      "name": "James Franklin",
+      "time": "08 am - 04 pm",
+      "hours": [
+        {
+          "hour": 8,
+          "shift": "on"
+        },
+        {
+          "hour": 9,
+          "shift": "on"
+        },
+        {
+          "hour": 10,
+          "shift": "on"
+        },
+        {
+          "hour": 11,
+          "shift": "on"
+        },
+        {
+          "hour": 12,
+          "shift": "on"
+        },
+        {
+          "hour": 13,
+          "shift": "on"
+        },
+        {
+          "hour": 14,
+          "shift": "on"
+        },
+        {
+          "hour": 15,
+          "shift": "on"
+        },
+        {
+          "hour": 16,
+          "shift": "on"
+        },
+        {
+          "hour": 17,
+          "shift": "off"
+        },
+        {
+          "hour": 18,
+          "shift": "off"
+        },
+        {
+          "hour": 19,
+          "shift": "off"
+        },
+        {
+          "hour": 20,
+          "shift": "off"
+        },
+        {
+          "hour": 21,
+          "shift": "off"
+        },
+        {
+          "hour": 22,
+          "shift": "off"
+        },
+        {
+          "hour": 23,
+          "shift": "off"
+        },
+        {
+          "hour": 24,
+          "shift": "off"
+        },
+        {
+          "hour": 1,
+          "shift": "off"
+        },
+        {
+          "hour": 2,
+          "shift": "off"
+        },
+        {
+          "hour": 3,
+          "shift": "off"
+        },
+        {
+          "hour": 4,
+          "shift": "off"
+        },
+        {
+          "hour": 5,
+          "shift": "off"
+        },
+        {
+          "hour": 6,
+          "shift": "off"
+        },
+        {
+          "hour": 7,
+          "shift": "off"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ronald Riech",
+      "time": "10 am - 07 pm",
+      "hours": [
+        {
+          "hour": 8,
+          "shift": "off"
+        },
+        {
+          "hour": 9,
+          "shift": "off"
+        },
+        {
+          "hour": 10,
+          "shift": "on"
+        },
+        {
+          "hour": 11,
+          "shift": "on"
+        },
+        {
+          "hour": 12,
+          "shift": "on"
+        },
+        {
+          "hour": 13,
+          "shift": "on"
+        },
+        {
+          "hour": 14,
+          "shift": "on"
+        },
+        {
+          "hour": 15,
+          "shift": "on"
+        },
+        {
+          "hour": 16,
+          "shift": "on"
+        },
+        {
+          "hour": 17,
+          "shift": "on"
+        },
+        {
+          "hour": 18,
+          "shift": "off"
+        },
+        {
+          "hour": 19,
+          "shift": "off"
+        },
+        {
+          "hour": 20,
+          "shift": "off"
+        },
+        {
+          "hour": 21,
+          "shift": "off"
+        },
+        {
+          "hour": 22,
+          "shift": "off"
+        },
+        {
+          "hour": 23,
+          "shift": "off"
+        },
+        {
+          "hour": 24,
+          "shift": "off"
+        },
+        {
+          "hour": 1,
+          "shift": "off"
+        },
+        {
+          "hour": 2,
+          "shift": "off"
+        },
+        {
+          "hour": 3,
+          "shift": "off"
+        },
+        {
+          "hour": 4,
+          "shift": "off"
+        },
+        {
+          "hour": 5,
+          "shift": "off"
+        },
+        {
+          "hour": 6,
+          "shift": "off"
+        },
+        {
+          "hour": 7,
+          "shift": "off"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jessica Biel",
+      "time": "06 pm - 03 am",
+      "hours": [
+        {
+          "hour": 8,
+          "shift": "off"
+        },
+        {
+          "hour": 9,
+          "shift": "off"
+        },
+        {
+          "hour": 10,
+          "shift": "off"
+        },
+        {
+          "hour": 11,
+          "shift": "off"
+        },
+        {
+          "hour": 12,
+          "shift": "off"
+        },
+        {
+          "hour": 13,
+          "shift": "off"
+        },
+        {
+          "hour": 14,
+          "shift": "off"
+        },
+        {
+          "hour": 15,
+          "shift": "off"
+        },
+        {
+          "hour": 16,
+          "shift": "off"
+        },
+        {
+          "hour": 17,
+          "shift": "off"
+        },
+        {
+          "hour": 18,
+          "shift": "on"
+        },
+        {
+          "hour": 19,
+          "shift": "on"
+        },
+        {
+          "hour": 20,
+          "shift": "on"
+        },
+        {
+          "hour": 21,
+          "shift": "on"
+        },
+        {
+          "hour": 22,
+          "shift": "on"
+        },
+        {
+          "hour": 23,
+          "shift": "on"
+        },
+        {
+          "hour": 24,
+          "shift": "on"
+        },
+        {
+          "hour": 1,
+          "shift": "on"
+        },
+        {
+          "hour": 2,
+          "shift": "on"
+        },
+        {
+          "hour": 3,
+          "shift": "on"
+        },
+        {
+          "hour": 4,
+          "shift": "on"
+        },
+        {
+          "hour": 5,
+          "shift": "off"
+        },
+        {
+          "hour": 6,
+          "shift": "off"
+        },
+        {
+          "hour": 7,
+          "shift": "off"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Andrew Sith",
+      "time": "12 pm - 12 am",
+      "hours": [
+        {
+          "hour": 8,
+          "shift": "off"
+        },
+        {
+          "hour": 9,
+          "shift": "off"
+        },
+        {
+          "hour": 10,
+          "shift": "off"
+        },
+        {
+          "hour": 11,
+          "shift": "off"
+        },
+        {
+          "hour": 12,
+          "shift": "on"
+        },
+        {
+          "hour": 13,
+          "shift": "on"
+        },
+        {
+          "hour": 14,
+          "shift": "on"
+        },
+        {
+          "hour": 15,
+          "shift": "on"
+        },
+        {
+          "hour": 16,
+          "shift": "on"
+        },
+        {
+          "hour": 17,
+          "shift": "on"
+        },
+        {
+          "hour": 18,
+          "shift": "on"
+        },
+        {
+          "hour": 19,
+          "shift": "on"
+        },
+        {
+          "hour": 20,
+          "shift": "on"
+        },
+        {
+          "hour": 21,
+          "shift": "on"
+        },
+        {
+          "hour": 22,
+          "shift": "on"
+        },
+        {
+          "hour": 23,
+          "shift": "on"
+        },
+        {
+          "hour": 24,
+          "shift": "on"
+        },
+        {
+          "hour": 1,
+          "shift": "off"
+        },
+        {
+          "hour": 2,
+          "shift": "off"
+        },
+        {
+          "hour": 3,
+          "shift": "off"
+        },
+        {
+          "hour": 4,
+          "shift": "off"
+        },
+        {
+          "hour": 5,
+          "shift": "off"
+        },
+        {
+          "hour": 6,
+          "shift": "off"
+        },
+        {
+          "hour": 7,
+          "shift": "off"
+        }
+      ]
+    }
+  ]
+}

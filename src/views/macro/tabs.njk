@@ -1,0 +1,48 @@
+{# tabs macro #}
+{%- macro list(classes = []) -%}
+    <ul class="nav nav-tabs {{ classes | join(' ') }}" role="tablist">{{ caller() }}</ul>
+{%- endmacro -%}
+
+{%- macro content(classes = []) -%}
+    <div class="tab-content {{ classes | join(' ') }}">{{ caller() }}</div>
+{%- endmacro -%}
+
+{%- macro link(date, text, paneId) -%}
+    <a href="#{{paneId}}" aria-controls="home" role="tab" data-toggle="tab">
+
+        <div class="date-heading">
+            {{ text }}
+            <span>{{date}}</span>
+        </div>
+    </a>
+{%- endmacro -%}
+
+{%- macro activeLink(icon, text, paneId) -%}
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#{{paneId}}" role="tab">
+        {{ text }}
+    </button>
+{%- endmacro -%}
+
+{%- macro disabledLink(text) -%}
+    <span class="nav-link disabled" role="tab">{{ text }}</span>
+{%- endmacro -%}
+
+{%- macro item(icon, text, paneId) -%}
+    <li class="nav-item mobile-slide__item">{{ link(icon, text, paneId) }}</li>
+{%- endmacro -%}
+
+{%- macro activeItem(icon, text, paneId) -%}
+    <li class="nav-item mobile-slide__item">{{ activeLink(icon, text, paneId) }}</li>
+{%- endmacro -%}
+
+{%- macro disabledItem(text) -%}
+    <li class="nav-item  mobile-slide__item">{{ disabledLink(text, paneId) }}</li>
+{%- endmacro -%}
+
+{%- macro pane(id, classes = []) -%}
+    <div class="tab-pane fade {{ classes | join(' ') }}" id="{{ id }}" role="tabpanel">{{ caller() }}</div>
+{%- endmacro -%}
+
+{%- macro activePane(id, classes = []) -%}
+    <div class="tab-pane fade show active {{ classes | join(' ') }}" id="{{ id }}" role="tabpanel">{{ caller() }}</div>
+{%- endmacro -%}

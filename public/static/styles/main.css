@@ -1,0 +1,146 @@
+.nav-tabs {
+  padding: 20px 0 0;
+  margin: 0 20px 0;
+}
+
+.nav-tabs li {
+  width: 14.285%;
+}
+
+.nav-tabs li a {
+  border: none !important;
+  border-bottom: transparent 3px solid !important;
+}
+
+.nav-tabs li a div.date-heading {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-tabs li a div.date-heading span {
+  margin-left: 10px;
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.nav-tabs li.active a {
+  border-bottom: #26a69a 3px solid !important;
+  color: #26a69a;
+}
+
+.nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+  color: #26a69a;
+}
+
+.nav-tabs li.active a div.date-heading {
+  font-size: 18px;
+}
+
+.nav-tabs li.active a div.date-heading span {
+  color: #26a69a;
+}
+
+.emp-hours {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emp-hours__left {
+  width: 22%;
+}
+
+.emp-hours__left .h-th {
+  text-transform: none;
+}
+
+.emp-hours__left .h-th span {
+  font-weight: normal;
+  color: #666;
+}
+
+.emp-hours__right {
+  width: 78%;
+  overflow-x: auto;
+}
+
+.emp-hours__right .h-td {
+  width: 70px !important;
+}
+
+.emp-hours__right .h-td:hover {
+  background: #f2f2f2;
+}
+
+.emp-hours__right .h-th {
+  width: 90px !important;
+  text-align: center;
+}
+
+.emp-hours .h-th,
+.emp-hours .h-td {
+  padding: 5px 10px;
+  white-space: nowrap;
+  border: 1px solid #f2f2f2;
+  border-right: none;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 70px;
+  overflow: hidden;
+}
+
+.emp-hours .h-td {
+  padding: 0;
+}
+
+.emp-hours .h-td .emp-shift.on:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #26a69a;
+}
+
+.emp-hours .h-th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.emp-hours .h-th .emp-name {
+  text-transform: none;
+}
+
+.emp-hours .h-th .emp-name span {
+  display: block;
+}
+
+.emp-hours .h-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

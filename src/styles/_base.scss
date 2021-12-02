@@ -1,0 +1,125 @@
+.nav-tabs {
+  padding: 20px 0 0;
+  margin: 0 20px 0;
+  li {
+    width: 14.285%;
+    a {
+      border: none !important;
+      border-bottom: transparent 3px solid !important;
+      div.date-heading {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        font-weight: bold;
+        padding: 0 0 10px;
+        justify-content: center;
+
+        span {
+          margin-left: 10px;
+          display: block;
+          font-weight: normal;
+          font-size: 14px;
+        }
+      }
+    }
+    &.active {
+      a {
+        border-bottom: $primary-color 3px solid !important;
+        color: $primary-color;
+
+        &:hover,
+        &:focus {
+          color: $primary-color;
+        }
+
+        div.date-heading {
+          font-size: 18px;
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.emp-hours {
+  margin: 20px;
+  display: flex;
+
+  &__left {
+    width: 22%;
+
+    .h-th {
+      text-transform: none;
+      span {
+        font-weight: normal;
+        color: #666;
+      }
+    }
+  }
+  &__right {
+    width: 78%;
+    overflow-x: auto;
+
+    .h-td {
+      width: 70px !important;
+      &:hover {
+        background: #f2f2f2;
+      }
+    }
+
+    .h-th {
+      width: 90px !important;
+      text-align: center;
+    }
+  }
+
+  .h-th,
+  .h-td {
+    padding: 5px 10px;
+    white-space: nowrap;
+    border: 1px solid #f2f2f2;
+    border-right: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 70px;
+    overflow: hidden;
+  }
+
+  .h-td {
+    padding: 0;
+
+    .emp-shift {
+      &.on {
+        &:after {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 10px;
+          background: $primary-color;
+        }
+      }
+    }
+  }
+
+  .h-th {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    .emp-name {
+      text-transform: none;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .h-row {
+    display: flex;
+  }
+}

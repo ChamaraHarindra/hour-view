@@ -14,12 +14,27 @@
         font-weight: bold;
         padding: 0 0 10px;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        > div {
+          display: flex;
+          align-items: center;
+        }
 
         span {
           margin-left: 10px;
           display: block;
           font-weight: normal;
           font-size: 14px;
+        }
+
+        i {
+          font-size: 12px;
+          font-style: normal;
+          margin-top: 5px;
+          display: block;
+          font-weight: normal;
         }
       }
     }
@@ -41,6 +56,15 @@
         }
       }
     }
+  }
+}
+
+.h-th {
+  span {
+    font-weight: normal;
+    color: #666;
+    text-transform: none;
+    font-size: 12px;
   }
 }
 
@@ -101,7 +125,7 @@
           content: "";
           width: 100%;
           height: 10px;
-          background: $primary-color;
+          background: $primary-color !important;
         }
       }
     }
@@ -121,5 +145,61 @@
 
   .h-row {
     display: flex;
+  }
+}
+
+// printing styles
+
+@media print {
+  .print-btn,
+  #days li:not(.active) {
+    display: none;
+  }
+
+  #days li.active {
+    a {
+      border: none !important;
+    }
+
+    .date-heading {
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      > div {
+        font-size: 20px;
+
+        span {
+          font-size: 20px;
+        }
+      }
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .emp-hours__left {
+    width: 12%;
+  }
+
+  .emp-hours__right {
+    width: 88%;
+    overflow: hidden;
+
+    .h-th,
+    .h-td {
+      padding-left: 2px;
+      padding-right: 2px;
+      min-width: 40px;
+      font-size: 11px !important;
+
+      span {
+        font-size: 11px !important;
+      }
+    }
+
+    .h-td {
+      padding: 0;
+    }
   }
 }
